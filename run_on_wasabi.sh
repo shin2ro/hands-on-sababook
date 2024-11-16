@@ -40,4 +40,6 @@ if [ ! -f $MAKEFILE_PATH ]; then
 fi
 
 make build
+
+export DISPLAY=0
 $OS_PATH/scripts/run_with_app.sh ./target/x86_64-unknown-none/release/$APP_NAME
